@@ -1,0 +1,58 @@
+mixin dev_head(page_title, index)
+    head
+        title=page_title
+        | <!-- saved from url=(0014)about:internet -->
+        meta(charset='utf-8')
+        meta(name='viewport', content="width=device-width, initial-scale=1.0")
+        meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="format-detection", content="telephone=no")
+        link(rel='stylesheet', href='styles/main_global.css', media='all')
+        script(src='js/jquery1.10.js')
+        script(src='js/jquery-ui.js')
+        script(src='js/jquery.stellar.min.js')
+        script(src='js/select2.full.min.js')
+        script(src='js/moment.min.js')
+        script(src='js/jquery.validationEngine.js')
+        script(src='js/jquery.validationEngine-ru.js')
+        script(src='js/daterangepicker.js')
+        script(src='js/swiper.js')
+        script(src='js/script.js')
+        - if (index)
+            script(src='js/jquery.backstretch.min.js')
+            script(src='js/index.js')
+            
+
+mixin loop_while(counter)
+    -i=0;
+    while i < counter
+        -i++;
+        block
+            
+mixin works_slider(count)
+    .tab_inner.works_slider
+        .swiper-container.workSlider
+            .swiper-wrapper.clearfix
+                - if (count > 1)
+                    +loop_while(count)
+                        .swiper-slide
+                            .work_slide
+                                img(src='i/photo_1.jpg')
+                                .work_sl_info
+                                    a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+                            .work_slide
+                                img(src='i/photo_1.jpg')
+                                .work_sl_info
+                                    a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+                - else
+                    .swiper-slide
+                        .work_slide
+                            img(src='i/photo_1.jpg')
+                            .work_sl_info
+                                a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+
+        .slider_pagination
+        .swiper-button-next.slider_next
+        .swiper-button-prev.slider_prev
+                
+                

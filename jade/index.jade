@@ -1,0 +1,310 @@
+include mixins
+doctype html
+html(lang='ru')
+    +dev_head('Girland', true)
+    body.h_100p
+        .wrapper
+            .slider_holder
+                .mainSlider.swiper-container.main_slider
+                    .swiper_controls: .section_inner
+                        .swiper-button-next#main_slider_next
+                        .swiper-button-prev#main_slider_prev
+                    .swiper-wrapper.clearfix
+                        +loop_while(4)
+                            .swiper-slide
+                                .slide_img.imgBS: img(src='i/top_banner.jpg')
+
+                    .slide_content
+                        .section_inner.text_center
+                            .slide_i_block
+                                h2.slide_i_caption.fz_30 А Р Е Н Д А
+                                p.fz_72 Ретро
+                                p.fz_42 гирлянды
+                                p.fz_37 с лампами
+                                p.fz_30 накаливания
+
+                a.btn_v3.order_now_btn.white_btn(href='#') заказать сейчас
+            .base
+                div.header: .section_inner
+                    ul.main_menu
+                        li.menu_item
+                            a.menu_link(href='#')
+                                span.link_text расчитать стоимость
+                        li.menu_item
+                            a.menu_link(href='#')
+                                span.link_text условия аренды
+                        li.menu_item.logo_holder
+                            span.logo
+                        li.menu_item
+                            a.menu_link(href='#')
+                                span.link_text остались вопросы?
+                        li.menu_item
+                            a.menu_link(href='#')
+                                span.link_text звоните: 8 495 135 75 31
+                    
+                div.main_content
+                    .section_w.section_v1
+                        .section_inner
+                            h2.section_caption.bordered на несколько дней  <br>  иЛИ навсегда
+                            
+                            .article_v1.text_center
+                                p 3 года назад мы начали делать и продавать гирлянды в Happy Station, а еще через полгода стали сдавать их в аренду. Тогда мы были одними из первых, если не самыми первыми. С тех пор мы сделали 9 километров чистой красоты, побывали с ними на 17 ярмарках, украсили 62 свадьбы, 7 интерьеров ресторанов, 1 рекламный ролик и даже 1 фильм со  <br>  Шнуром в главной роли.
+                                
+                                p Если вы хотите украсить свой праздник, — лучше, изящнее и интеллигентнее способа не найдете, а мы с удовольствием в этом поможем.
+                    
+                    .section_w.section_v2
+                        
+                        .garland_block
+                            .garland_4.garland_item(
+                                data-stellar-offset-parent="true"
+                                data-stellar-horizontal-offset="0"
+                                data-stellar-ratio="1.2"
+                                )
+                                img(src='i/1604_HS_Garland_Parallax_04.png')
+                            .garland_3.garland_item(
+                                data-stellar-offset-parent="true"
+                                data-stellar-horizontal-offset="0"
+                                data-stellar-ratio="1.5"
+                                )
+                                img(src='i/1604_HS_Garland_Parallax_03.png')
+                            .garland_2.garland_item(
+                                data-stellar-offset-parent="true"
+                                data-stellar-horizontal-offset="0"
+                                data-stellar-ratio="1.8"
+                                )
+                                img(src='i/1604_HS_Garland_Parallax_02.png')
+                            .garland_1.garland_item(
+                                data-stellar-offset-parent="true"
+                                data-stellar-horizontal-offset="0"
+                                data-stellar-ratio="2.1"
+                                )
+                                img(src='i/1604_HS_Garland_Parallax_01.png')
+
+                            .section_inner
+                                ul.garland_dims
+                                    li
+                                        .garland_dim_unit
+                                            .garland_dim_caption расстояние  <br> между лампочками
+                                            .garland_dim_img
+                                                img(src='i/lamp_dist.svg')
+                                                .garland_text 
+                                                    | 30 
+                                                    span.fz_24 см
+                                            p На наших гирляндах элементарно больше лампочек! 
+                                            
+                                    li
+                                        .garland_dim_unit
+                                            .garland_dim_caption длина <br> гирлянд
+                                            .garland_dim_img
+                                                img(src='i/garland.svg')
+                                                .garland_text 
+                                                    | 3 
+                                                    span.fz_24 м  
+                                                    | • 5 
+                                                    span.fz_24 м 
+                                                    | • 10 
+                                                    span.fz_24 м 
+                                                    | • 15 
+                                                    span.fz_24 м
+
+                                            p Мы подобрали оптимальные длины гирлянд на все случаи.
+                                            
+                                    li
+                                        .garland_dim_unit
+                                            .garland_dim_caption мощность <br> ламп
+                                            .garland_dim_img
+                                                img(src='i/lamp_power.svg')
+                                                .garland_text 
+                                                    | 10 
+                                                    span.fz_24 Вт
+                                                    | &nbsp; &nbsp; &nbsp; 25 
+                                                    span.fz_24 Вт 
+                                            p Наши гирлянды подходят как для украшения, так и для освещения.
+                                            
+                                    li
+                                        .garland_dim_unit
+                                            .garland_dim_caption и ещё
+                                            .garland_dim_img
+                                                a.garland_add_mode(href='benefits.html') 
+                                            p Еще несколько причин, почему наши гирлянды самые крутые
+                            .garland_works: .section_inner
+                                h2.section_caption наши гирлянДы <br> в работе
+                                .tab_controls
+                                    ul#works_filter.filter_list
+                                        li.filter_item: a.filter_link(href='#filter_tab_1'): span все фото (121)
+                                        li.filter_item: a.filter_link(href='#filter_tab_2'): span праздники (33)
+                                        li.filter_item: a.filter_link(href='#filter_tab_3'): span ярмарки и интерьеры (24)
+                                        li.filter_item: a.filter_link(href='#filter_tab_4'): span реклама и кино (2)
+                                        li.filter_item: a.filter_link(href='#filter_tab_5'): span свадьбы (62)
+                                        
+                                .tabBlock(data-tab-context='#works_filter')
+                                    #filter_tab_1
+                                        +works_slider(15)
+                                    #filter_tab_2
+                                        +works_slider(4)
+                                    #filter_tab_3
+                                        +works_slider(1)
+                                    #filter_tab_4
+                                        +works_slider(5)
+                                    #filter_tab_5
+                                        +works_slider(10)
+                                    
+                                .share_banner
+                                    .share_discount
+                                        span.discount_val 10
+                                        span.discount_perc %
+                                        .discount_text &nbsp; скидка
+                                    .share_b_left: span за фото вашего праздника с тегом 
+                                    .share_b_right: span #гирлянды_happystation
+                    
+                    .section_w.section_v2
+                        .section_inner
+                            .order_form
+                                h2.section_caption.buyMode выберите дату <br> и забронируйте гирлянды
+                                h2.section_caption.buyMode.modeInvert(style='display:none;') выберите размер <br> и закажите доставку
+                                
+                                form.validateMe(action='#')
+                                    .text_center
+                                        label.order_switcher
+                                            input.inp_hidden.checkDependence(type='checkbox' data-dependence='.buyMode' checked)
+                                            span.switcher_trigger
+                                            span.switcher_on купить 
+                                            span.switcher_off арендовать
+                                    .buyMode
+                                        .date_p_controls
+                                            .date_p_years
+                                                select.select2.dateRangeYear(data-select-class='select_v1')
+                                            
+                                            .date_p_months
+                                                .date_month.dateMonth: span.month_day.monthBtn Январь
+                                                .date_month.dateMonth: span.month_day.monthBtn Февраль
+                                                .date_month.dateMonth: span.month_day.monthBtn Март
+                                                .date_month.dateMonth.active: span.month_day.monthBtn Апрель 
+                                                .date_month.dateMonth.active: span.month_day.monthBtn Май
+                                                .date_month.dateMonth: span.month_day.monthBtn Июнь
+                                                .date_month.dateMonth: span.month_day.monthBtn Июль
+                                                .date_month.dateMonth: span.month_day.monthBtn Август
+                                                .date_month.dateMonth: span.month_day.monthBtn Сентябрь
+                                                .date_month.dateMonth: span.month_day.monthBtn Октябрь
+                                                .date_month.dateMonth: span.month_day.monthBtn Ноябрь
+                                                .date_month.dateMonth: span.month_day.monthBtn Декабрь
+                                            
+                                        .date_p_holder.datePicker
+                                            input#daterange.inp_hidden(type="text" name="daterange")
+                                        .date_p_value
+                                            span выбранный Период аренды: 
+                                            span.dateRange.date_p_range 13 ДНЕЙ
+                                        
+                                    .order_options_table
+                                        .order_opt_row
+                                            .order_opt_cell
+                                                .order_opt_item: label.radio_v1
+                                                    input.inp_hidden(type='radio' name='delivery')
+                                                    span.check_text 
+                                                        span.clr_gold доставка по москве 500 руб  <br> 
+                                                        span.clr_gray (бесплатно при заказе от 6000 руб)
+                                                                                                
+                                            .order_opt_cell
+                                                .order_opt_item: label.radio_v1
+                                                    input.inp_hidden(type='radio' name='delivery')
+                                                    span.check_text 
+                                                        span.clr_gold доставка за пределы москвы  <br> 
+                                                        span.clr_gray (расСчитывается индивидуально)
+                                                        
+                                            .order_opt_cell
+                                                .order_opt_item: label.radio_v1
+                                                    input.inp_hidden(type='radio' name='delivery')
+                                                    span.check_text
+                                                        span.clr_gold самовывоз <br> 
+                                                        span.clr_gray (посмотреть на карте)
+                                                        
+                                        .order_opt_row
+                                            .order_opt_cell &nbsp;
+                                            .order_opt_cell
+                                                .order_opt_item: label.check_v1.buyMode
+                                                    input.inp_hidden(type='checkbox')
+                                                    span.check_text
+                                                        span.clr_gold нужен монтаж <br> 
+                                                        span.clr_gray (рассчитывается индивидуально)
+    
+                                                .order_opt_item: label.check_v1.buyMode
+                                                    input.inp_hidden.checkDependence2(type='checkbox')
+                                                    span.check_text 
+                                                        span.clr_gold нужна защита от дождя <br> 
+                                                        span.clr_gray (только для гирлянд длиной 50 м)
+                                                        
+                                            .order_opt_cell &nbsp;
+
+                                    .order_settings_table
+                                        .order_settings_cell
+                                            .setting_unit
+                                                span.clr_gray длина гирлянды:
+                                                span
+                                                    select.select2(data-select-class='select_v2')
+                                                        option(data-nowaterproof='не влагозащищенные') 3 метра
+                                                        option(data-nowaterproof='не влагозащищенные') 5 метров
+                                                        option(data-nowaterproof='не влагозащищенные') 10 метров
+                                                        option(data-nowaterproof='не влагозащищенные') 15 метров
+                                                        option 25 метров
+                                                        option 50 метров
+
+                                        .order_settings_cell
+                                            .setting_unit
+                                                span.clr_gray количество гирлянд:   
+                                                span.settings_counter
+                                                    span.settings_btn.btn_down
+                                                    input.f_input.input_v1(value='1')
+                                                    span.settings_btn.btn_up
+                                                    
+
+                                        .order_settings_cell
+                                            .setting_unit
+                                                span.clr_gray мощность ламп:   
+                                                span
+                                                    select.select2(data-select-class='select_v2')
+                                                        option 25 вт
+                                                        option 50 вт
+                                                        option 75 вт
+                                                        option 100 вт
+                                                        
+                                    .text_center
+                                        a.order_add_btn(href='#') добавить гирлянду другого размера
+                                        
+                                    .form_row
+                                        .form_cell
+                                            input.f_input.input_v2(placeholder='ваше имя' class='validate[required]')
+                                                        
+                                        .form_cell
+                                            input.f_input.input_v2(placeholder='ваш e-mail' class='validate[required,custom[email]]')
+                                                        
+                                        .form_cell
+                                            input.f_input.input_v2(placeholder='ваш телефон' class='validate[required]')
+                                                       
+                                    .text_center
+                                        .pledge_sum.buyMode
+                                            span.clr_gray сумма залога за гирлянды: 
+                                            span.clr_gold  12 000 руб
+                                        .rent_sum 
+                                            span.clr_gray стоимость аренды:
+                                            span.clr_gold  1 000 руб
+                                            
+                                        button.btn_v3.order_btn.white_btn_gold заказать
+
+            .footer_holder
+                .footer
+                    .section_inner
+                        .footer_table
+                            .footer_t_cell
+                                p.text_upper HAPPY STATION <br> в соцсетях:
+                                ul.footer_share
+                                    li: a.sh_link.sh_fb(href='https://www.facebook.com/happystationru')
+                                    li: a.sh_link.sh_in(href='https://www.instagram.com/happystation/')
+                                    li: a.sh_link.sh_vk(href='https://ru.pinterest.com/happystation/')
+                            .footer_t_cell
+                                p: a.footer_logo(href='#'): span.text_upper Перейти в магазин <br> Happy Station
+                                
+                            .footer_t_cell
+                                p.text_upper нужна помощь?
+                                .callback_text Звоните: +1-855-773-6736 <br> или пишите 
+                                    a.callback_link(href='mailto:arenda@happystation.ru') arenda@happystation.ru
+                                    
