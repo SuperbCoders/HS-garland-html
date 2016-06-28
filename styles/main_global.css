@@ -2278,7 +2278,6 @@ body.h_100p .wrapper {
   margin: 0 auto;
   position: relative;
   line-height: 40px;
-  padding-left: 40px;
   padding-bottom: 5px;
   border-bottom: 1px solid #818181;
   font-family: "BebasNeueLight", sans-serif;
@@ -2288,6 +2287,7 @@ body.h_100p .wrapper {
   position: absolute;
   top: 4px;
   left: -7px;
+  display: none;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2549,6 +2549,12 @@ body.h_100p .wrapper {
 }
 .date_p_months .date_month {
   display: table-cell;
+  text-align: center;
+}
+.date_p_months .date_month:first-child {
+  text-align: left;
+}
+.date_p_months .date_month:last-child {
   text-align: right;
 }
 

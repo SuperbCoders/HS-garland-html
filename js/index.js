@@ -1,4 +1,18 @@
 var mainSlider, work_tabs, datePicker,
+    months = [
+        'Январь',
+        'Февраль',
+        'Март',
+        'Апрель',
+        'Май',
+        'Июнь',
+        'Июль',
+        'Август',
+        'Сентябрь',
+        'Октябрь',
+        'Ноябрь',
+        'Декабрь'
+    ],
     datePickerParam = {
         "parentEl": ".datePicker",
         "opens": "embed",
@@ -17,7 +31,7 @@ var mainSlider, work_tabs, datePicker,
         "applyClass": "inp_hidden",
         "cancelClass": "inp_hidden",
         "minDate": moment(),
-        //"maxDate": moment().add(150, 'd').format('DD/MM/YYYY'),
+        "maxDate": moment().add(1, 'y'),
         //"alwaysShowCalendars": true,
 
         locale: {
@@ -58,6 +72,15 @@ $(window).on('load', function () {
     initWorkSliders();
 
 });
+
+function updateMonths() {
+
+    $('.dateMonth').each(function (ind) {
+        var mm = moment(datePickerParam.minDate).add(ind, 'month').month();
+        $(this).attr('data-month', mm).find('.monthBtn').text(months[mm]);
+    }).first().find('.monthBtn').click();
+
+}
 
 function initWorkSliders() {
 
@@ -164,22 +187,19 @@ $(function ($) {
                 var tab = ui.newTab;
 
                 tab.parent().attr('data-active-tab', tab.index());
-                
+
                 initWorkSliders();
-                
+
                 $(window).trigger('resize');
                 //$('.priceSelect').val('#' + ui.newPanel.attr('id')).trigger('change');
 
             }
         });
 
-    datePicker = $('input#daterange').daterangepicker(datePickerParam, function (start, end, label) {
-        console.log(start, end, label);
-        $(this)[0].element.change();
-    });
+    datePicker = $('input#daterange').daterangepicker(datePickerParam);
 
     $('.monthBtn').on ('click', function () {
-        var firedEl = $(this).parent(), dateMonth = $('.dateMonth'), ind = firedEl.index();
+        var firedEl = $(this).parent(), ind = 1 * firedEl.attr('data-month'), dateMonth = $('.dateMonth');
 
         var firstMonthSelect = datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .monthselect'),
             secondMonthSelect = datePicker.data('daterangepicker').parentEl.find('.calendar.right .month .monthselect');
@@ -188,11 +208,18 @@ $(function ($) {
 
         firstMonthSelect[0].selectedIndex = ind;
 
-        if (ind == 11) {
-            dateMonth.eq(ind).addClass('active');
-            dateMonth.eq(0).addClass('active');
+        var yearSelect = datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .yearselect');
+
+        yearSelect[0].selectedIndex = 1 * (moment(datePickerParam.minDate).month() > ind);
+
+        yearSelect.trigger('change');
+
+        if (firedEl.index() == 11) {
+            firedEl.prev().find('.monthBtn').click();
         } else {
-            dateMonth.eq(ind).addClass('active').next().addClass('active');
+            dateMonth.filter(function (e, r) {
+                return $(r).attr("data-month") == ind;
+            }).addClass('active').next().addClass('active');
         }
 
         firstMonthSelect.trigger('change');
@@ -211,17 +238,19 @@ $(function ($) {
 
     });
 
-    datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .yearselect option').each(function (ind) {
-        $('.dateRangeYear').append($('<option>' + this.innerHTML + '</option>'));
-    });
+    //datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .yearselect option').each(function (ind) {
+    //    $('.dateRangeYear').append($('<option>' + this.innerHTML + '</option>'));
+    //});
 
-    $('.dateRangeYear').on ('change', function () {
-        var yearSelect = datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .yearselect');
+    //$('.dateRangeYear').on ('change', function () {
+    //    var yearSelect = datePicker.data('daterangepicker').parentEl.find('.calendar.left .month .yearselect');
+    //
+    //    yearSelect[0].selectedIndex = this.selectedIndex;
+    //
+    //    yearSelect.trigger('change');
+    //});
 
-        yearSelect[0].selectedIndex = this.selectedIndex;
-
-        yearSelect.trigger('change');
-    });
+    updateMonths();
 
     function formatResult(item) {
         if (!item.id) {

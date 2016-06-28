@@ -1102,7 +1102,7 @@ body {
   margin: 0 auto;
   position: relative;
   line-height: 40px;
-  padding-left: 40px;
+  //padding-left: 40px;
   padding-bottom: 5px;
   border-bottom: 1px solid #818181;
   font-family: $BebasNeueLight;
@@ -1112,6 +1112,7 @@ body {
   position: absolute;
   top: 4px;
   left: -7px;
+  display: none;
 }
 
 .order_settings_table {
@@ -1429,7 +1430,15 @@ body {
 
   .date_month {
     display: table-cell;
-    text-align: right;
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
   }
 }
 
