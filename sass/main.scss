@@ -828,12 +828,21 @@ body {
   padding-left: 7em;
   padding-right: 2em;
 
+  a,
   span {
     font: 24px $BebasNeueLight;
     letter-spacing: .5px;
+    text-decoration: none;
+    color: #fff;
 
     @include respond-to-min($resp_1) {
       font-size: 36px;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -1303,6 +1312,16 @@ body {
   }
 }
 
+.radio_tip_link {
+  font: 24px/30px $BebasNeueLight;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .radio_v1 {
   position: relative;
   display: inline-block;
@@ -1475,6 +1494,10 @@ body {
     vertical-align: top;
     width: 33%;
     padding: 0 4.5% 35px;
+
+    &.form_cell_wide {
+      width: 99.5%;
+    }
   }
 }
 
@@ -1605,7 +1628,7 @@ body {
     background: rgba(169, 140, 90, .6);
 
     &:active {
-      @include transform_translate(0, 2px);
+      margin-top: 2px;
     }
   }
 }
@@ -1910,4 +1933,130 @@ $rectWidth: 1280px;
     content: $icon-vk;
   }
 
+}
+
+.fancybox-next,
+.fancybox-prev {
+  @extend .icon-before;
+  @include transition_all(opacity .3s);
+  opacity: .5;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #f7f7f7;
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.fancybox-nav.fancybox-prev {
+  left: -140px;
+
+  &:before {
+    left: 0;
+    content: $icon-chevron-thin-left;
+  }
+}
+
+.fancybox-nav.fancybox-next {
+  right: -140px;
+
+  &:before {
+    right: 0;
+    content: $icon-chevron-thin-right;
+  }
+}
+
+.fancybox-overlay.fancybox-overlay-fixed {
+  background: rgba(0, 0, 0, .7);
+}
+
+.fancybox-close.fancybox-item {
+  @extend .icon-before;
+  @include transition_all(opacity .3s);
+  opacity: .5;
+  position: absolute;
+  top: 108px;
+  right: 8px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #f7f7f7;
+  color: #fff;
+  text-decoration: none;
+
+  &:before {
+    content: $icon-close;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.fancybox-title.fancybox-title-inside-wrap {
+  @extend .icon-before;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  color: #fff;
+
+  &:before {
+    position: absolute;
+    content: $icon-logo;
+    font-size: 65px;
+    width: 80px;
+    text-align: center;
+    left: 50%;
+    top: 0;
+    margin-left: -40px;
+  }
+
+}
+
+.image_title {
+  font-size: 14px;
+}
+
+.image_location {
+  font-size: 12px;
+  letter-spacing: -.25px;
+}
+
+.fancybox-wrap {
+  .fancybox-skin {
+    background: none;
+  }
+}
+
+.fancybox-counter {
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.fancybox-counter-title {
+  padding: 10px 0 5px;
+  font: 28px $BebasNeueRegular;
+}
+
+.fancybox-counter-val {
+  font: 28px $BebasNeueLight;
 }

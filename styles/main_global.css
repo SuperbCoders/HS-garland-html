@@ -225,7 +225,8 @@ textarea:focus::-moz-placeholder {
 
 /*-----------------------------form elements###*/
 [class^="icon-"]:before, [class*=" icon-"]:before, .icon-before:before, .logo:before, .main_slider .swiper-button-next:before, .main_slider
-.swiper-button-prev:before, .check_v1 .check_text:before, .footer_logo:before, .sh_link:before {
+.swiper-button-prev:before, .check_v1 .check_text:before, .footer_logo:before, .sh_link:before, .fancybox-next:before,
+.fancybox-prev:before, .fancybox-close.fancybox-item:before, .fancybox-title.fancybox-title-inside-wrap:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'girland_icons' !important;
   speak: none;
@@ -244,7 +245,7 @@ textarea:focus::-moz-placeholder {
 }
 
 .icon-chevron-thin-left:before {
-  content: "";
+  content: "";
 }
 
 .icon-check:before {
@@ -264,11 +265,11 @@ textarea:focus::-moz-placeholder {
 }
 
 .icon-chevron-thin-right:before {
-  content: "";
+  content: "";
 }
 
 .icon-vk:before {
-  content: "";
+  content: "";
 }
 
 .icon-google:before {
@@ -1696,7 +1697,7 @@ body.h_100p .wrapper {
   right: 55px;
 }
 .main_slider .swiper-button-next:before {
-  content: "";
+  content: "";
 }
 .works_slider .swiper-button-next {
   right: 0;
@@ -1709,7 +1710,7 @@ body.h_100p .wrapper {
   left: 55px;
 }
 .main_slider .swiper-button-prev:before {
-  content: "";
+  content: "";
 }
 .works_slider .swiper-button-prev {
   left: 0;
@@ -2046,14 +2047,21 @@ body.h_100p .wrapper {
   padding-left: 7em;
   padding-right: 2em;
 }
+.share_b_right a,
 .share_b_right span {
   font: 24px "BebasNeueLight", sans-serif;
   letter-spacing: .5px;
+  text-decoration: none;
+  color: #fff;
 }
 @media only screen and (min-width: 1200px) {
+  .share_b_right a,
   .share_b_right span {
     font-size: 36px;
   }
+}
+.share_b_right a:hover {
+  text-decoration: underline;
 }
 
 .share_b_right,
@@ -2456,6 +2464,15 @@ body.h_100p .wrapper {
   content: "";
 }
 
+.radio_tip_link {
+  font: 24px/30px "BebasNeueLight", sans-serif;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+.radio_tip_link:hover {
+  text-decoration: underline;
+}
+
 .radio_v1 {
   position: relative;
   display: inline-block;
@@ -2596,6 +2613,9 @@ body.h_100p .wrapper {
     width: 33%;
     padding: 0 4.5% 35px;
   }
+  .form_cell.form_cell_wide {
+    width: 99.5%;
+  }
 }
 
 .pledge_sum {
@@ -2718,9 +2738,7 @@ body.h_100p .wrapper {
   background: rgba(169, 140, 90, 0.6);
 }
 .btn_v2.work_sl_info:active {
-  -webkit-transform: translate(0, 2px);
-  -ms-transform: translate(0, 2px);
-  transform: translate(0, 2px);
+  margin-top: 2px;
 }
 
 .white_btn {
@@ -2999,7 +3017,126 @@ body.h_100p .wrapper {
   content: "";
 }
 .sh_link.sh_vk:before {
+  content: "";
+}
+
+.fancybox-next,
+.fancybox-prev {
+  -webkit-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: .5;
+}
+.fancybox-next:before,
+.fancybox-prev:before {
+  position: absolute;
+  top: 50%;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #f7f7f7;
+  color: #fff;
+}
+.fancybox-next:hover,
+.fancybox-prev:hover {
+  opacity: 1;
+}
+
+.fancybox-nav.fancybox-prev {
+  left: -140px;
+}
+.fancybox-nav.fancybox-prev:before {
+  left: 0;
+  content: "";
+}
+
+.fancybox-nav.fancybox-next {
+  right: -140px;
+}
+.fancybox-nav.fancybox-next:before {
+  right: 0;
   content: "";
+}
+
+.fancybox-overlay.fancybox-overlay-fixed {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.fancybox-close.fancybox-item {
+  -webkit-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: .5;
+  position: absolute;
+  top: 108px;
+  right: 8px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #f7f7f7;
+  color: #fff;
+  text-decoration: none;
+}
+.fancybox-close.fancybox-item:before {
+  content: "";
+}
+.fancybox-close.fancybox-item:hover {
+  opacity: 1;
+}
+
+.fancybox-title.fancybox-title-inside-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+.fancybox-title.fancybox-title-inside-wrap:before {
+  position: absolute;
+  content: "";
+  font-size: 65px;
+  width: 80px;
+  text-align: center;
+  left: 50%;
+  top: 0;
+  margin-left: -40px;
+}
+
+.image_title {
+  font-size: 14px;
+}
+
+.image_location {
+  font-size: 12px;
+  letter-spacing: -.25px;
+}
+
+.fancybox-wrap .fancybox-skin {
+  background: none;
+}
+
+.fancybox-counter {
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.fancybox-counter-title {
+  padding: 10px 0 5px;
+  font: 28px "BebasNeueRegular", sans-serif;
+}
+
+.fancybox-counter-val {
+  font: 28px "BebasNeueLight", sans-serif;
 }
 
 .hero_holder {
@@ -3188,6 +3325,279 @@ body.h_100p .wrapper {
 .additional_tip_caption {
   margin-bottom: 10px;
   font-family: "Avenir-Next-Cyr-Bold", sans-serif;
+}
+
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.fancybox-opened {
+  z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer, .fancybox-inner {
+  position: relative;
+}
+
+.fancybox-inner {
+  overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("fancybox_sprite.png");
+}
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("fancybox_loading.gif") center center no-repeat;
+}
+
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040;
+}
+
+.fancybox-prev {
+  left: 0;
+}
+
+.fancybox-next {
+  right: 0;
+}
+
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("fancybox_overlay.png");
+}
+
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url("fancybox_sprite@2x.png");
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  #fancybox-loading div {
+    background-image: url("fancybox_loading@2x.gif");
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
 }
 
 /*# sourceMappingURL=main_global.css.map */

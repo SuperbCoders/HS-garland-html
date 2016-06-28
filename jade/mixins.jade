@@ -20,6 +20,7 @@ mixin dev_head(page_title, index)
         script(src='js/script.js')
         - if (index)
             script(src='js/jquery.backstretch.min.js')
+            script(src='js/jquery.fancybox.js')
             script(src='js/index.js')
             
 
@@ -29,7 +30,7 @@ mixin loop_while(counter)
         -i++;
         block
             
-mixin works_slider(count)
+mixin works_slider(count, id)
     .tab_inner.works_slider
         .swiper-container.workSlider
             .swiper-wrapper.clearfix
@@ -39,17 +40,20 @@ mixin works_slider(count)
                             .work_slide
                                 img(src='i/photo_1.jpg')
                                 .work_sl_info
-                                    a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+                                    a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
+                                    title=' МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
                             .work_slide
                                 img(src='i/photo_1.jpg')
                                 .work_sl_info
-                                    a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+                                    a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
+                                    title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
                 - else
                     .swiper-slide
                         .work_slide
                             img(src='i/photo_1.jpg')
                             .work_sl_info
-                                a.btn_v2.work_sl_info.white_btn_white(href='#') крупнее
+                                a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
+                                title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
 
         .slider_pagination
         .swiper-button-next.slider_next

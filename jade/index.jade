@@ -139,15 +139,15 @@ html(lang='ru')
                                         
                                 .tabBlock(data-tab-context='#works_filter')
                                     #filter_tab_1
-                                        +works_slider(15)
+                                        +works_slider(15, 1)
                                     #filter_tab_2
-                                        +works_slider(4)
+                                        +works_slider(4, 2)
                                     #filter_tab_3
-                                        +works_slider(1)
+                                        +works_slider(1, 3)
                                     #filter_tab_4
-                                        +works_slider(5)
+                                        +works_slider(5, 4)
                                     #filter_tab_5
-                                        +works_slider(10)
+                                        +works_slider(10, 5)
                                     
                                 .share_banner
                                     .share_discount
@@ -155,7 +155,7 @@ html(lang='ru')
                                         span.discount_perc %
                                         .discount_text &nbsp; скидка
                                     .share_b_left: span за фото вашего праздника с тегом 
-                                    .share_b_right: span #гирлянды_happystation
+                                    .share_b_right: a(href='#') #гирлянды_happystation
                     
                     .section_w.section_v2
                         .section_inner
@@ -212,11 +212,13 @@ html(lang='ru')
                                                         span.clr_gray (расСчитывается индивидуально)
                                                         
                                             .order_opt_cell
-                                                .order_opt_item: label.radio_v1
-                                                    input.inp_hidden(type='radio' name='delivery')
-                                                    span.check_text
-                                                        span.clr_gold самовывоз <br> 
-                                                        span.clr_gray (посмотреть на карте)
+                                                .order_opt_item
+                                                    label.radio_v1
+                                                        input.inp_hidden(type='radio' name='delivery')
+                                                        span.check_text
+                                                            span.clr_gold самовывоз <br> 
+                                                    p
+                                                        a(target='_blank' href='https://yandex.ua/maps/10758/himki/?source=wizbiz_new_map_single&ncrnd=2233&text=%D0%BE%D1%81%D0%BA%20%D0%B1%D1%83%D0%BC%D0%B5%D1%80%D0%B0%D0%BD%D0%B3&sll=37.343002%2C55.864621&sspn=0.000180%2C0.000101&sctx=CAAAAAEAHThnRGnPQkCNl24Sg%2BBLQJP8iF%2BxhuQ%2Faw2l9iLa3T8CAAAAAQIBAAAAAAAAAAG0Q3myvn9qxdUAAAABAACAPwAAAAAAAAAA&ol=psearch&oid=62520244').radio_tip_link.clr_gray (посмотреть на карте)
                                                         
                                         .order_opt_row
                                             .order_opt_cell &nbsp;
@@ -279,6 +281,9 @@ html(lang='ru')
                                                         
                                         .form_cell
                                             input.f_input.input_v2(placeholder='ваш телефон' class='validate[required]')
+                                                       
+                                        .form_cell.form_cell_wide
+                                            input.f_input.input_v2(placeholder='адрес доставки' class='validate[required]')
                                                        
                                     .text_center
                                         .pledge_sum.buyMode

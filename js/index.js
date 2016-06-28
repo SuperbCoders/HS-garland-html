@@ -35,7 +35,7 @@ var mainSlider, work_tabs, datePicker,
         }
     };
 
-$(function ($) {
+$(window).on('load', function () {
 
     var mainSlider = new Swiper('.mainSlider', {
         // Optional parameters
@@ -49,11 +49,17 @@ $(function ($) {
         spaceBetween: 0,
         onInit: function (swp) {
             $(swp.slides).each(function (ind) {
-                var slide = $(this);                
+                var slide = $(this);
                 slide.backstretch(slide.find('img').hide().attr('src'));
             });
         }
     });
+
+    initWorkSliders();
+
+});
+
+function initWorkSliders() {
 
     $('.workSlider').each(function () {
         var $this = $(this);
@@ -97,9 +103,56 @@ $(function ($) {
                     slidesPerGroup: 4,
                     //spaceBetweenSlides: 23
                 }
+            },
+            onInit: function (swp) {
+                $(swp.slides).find('.fancyboxLink').fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    padding: 0,
+                    closeBtn: true,
+                    tpl: {
+                        wrap: '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-counter"></div><div class="fancybox-inner"></div></div></div></div>'
+                    },
+                    helpers: {
+                        title: {
+                            type: 'inside'
+                        },
+                        overlay: {
+                            locked: false
+                        }
+                    },
+                    afterLoad: function (e) {
+                        var counter = $(this.wrap).find('.fancybox-counter'), title = this.title,
+                            counter_html = $('<div />')
+                                .append('<div class="fancybox-counter-title" >' + ((this.element).attr('data-group-name') || '') +
+                                    '</div>')
+                                .append('<div class="fancybox-counter-val">' + (this.index + 1) + ' ИЗ ' + this.group.length +
+                                    '</div>');
+
+                        if (title) {
+                            this.title = '<div class="image_title">' + (title.split('|')[0] || '') +
+                                '</div> <div class="image_location">' + (title.split('|')[1] || '') +
+                                '</div>';
+                        }
+
+                        counter.html(counter_html);
+
+                    }
+                });
             }
         });
+
+        sl.update();
     });
+}
+
+$(window).resize(function () {
+
+    //console.log('window ' + $(window).width() + ' X ' + $(window).height());
+
+});
+
+$(function ($) {
 
     var dateRange = $('.dateRange');
 
@@ -111,7 +164,10 @@ $(function ($) {
                 var tab = ui.newTab;
 
                 tab.parent().attr('data-active-tab', tab.index());
-
+                
+                initWorkSliders();
+                
+                $(window).trigger('resize');
                 //$('.priceSelect').val('#' + ui.newPanel.attr('id')).trigger('change');
 
             }
@@ -173,7 +229,7 @@ $(function ($) {
             return item.text;
         }
         // return item template
-        console.log(item);
+        //console.log(item);
 
         return '<i>' + item.text + '</i>';
     }

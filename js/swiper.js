@@ -982,6 +982,7 @@
           Resize Handler
           ===========================*/
         s.onResize = function (forceUpdatePagination) {
+            console.log('resize');
             //Breakpoints
             if (s.params.breakpoints) {
                 s.setBreakpoint();
