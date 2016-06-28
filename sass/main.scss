@@ -1681,6 +1681,7 @@ body {
 
   &[disabled='disabled'] {
     pointer-events: none;
+    cursor: default;
     color: transparentize(#b09569, .5);
   }
 }

@@ -2785,6 +2785,7 @@ body.h_100p .wrapper {
 }
 .white_btn_gold[disabled='disabled'] {
   pointer-events: none;
+  cursor: default;
   color: rgba(176, 149, 105, 0.5);
 }
 
