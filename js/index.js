@@ -270,21 +270,6 @@ $(function ($) {
         return '<b>' + item.text + '</b>';
     }
 
-    $('.validateMe').validationEngine({
-        scroll: false,
-        showPrompts: true,
-        showArrow: false,
-        addSuccessCssClassToField: 'success',
-        addFailureCssClassToField: 'error',
-        parentFieldClass: '.formCell',
-        promptPosition: "centerRight",
-        autoHidePrompt: true,
-        autoHideDelay: 2000,
-        autoPositionUpdate: true,
-        addPromptClass: 'relative_mode',
-        showOneMessage: false
-    });
-
     $('.select2').each(function (ind) {
         var $slct = $(this), cls = $slct.attr('data-select-class') || '';
 

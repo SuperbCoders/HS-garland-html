@@ -649,6 +649,7 @@ body {
 }
 
 .garland_add_mode {
+  @include transition_all(background .3s);
   @extend %hor_vert_centr;
   position: absolute;
   border: 2px solid #9e8457;
@@ -675,6 +676,10 @@ body {
     height: 56px;
     width: 2px;
     margin: -28px 0 0 -1px;
+  }
+
+  &:hover {
+    background: #fff;
   }
 }
 
@@ -1665,13 +1670,18 @@ body {
 }
 
 .white_btn_gold {
-  @include transition_all(background .3s, transform .3s);
+  @include transition_all(background .3s, color .3s, transform .3s);
   background: #fff;
   color: #b09569;
   border: 2px solid #b09569;
 
   &:hover {
     background: #f8f8f8;
+  }
+
+  &[disabled='disabled'] {
+    pointer-events: none;
+    color: transparentize(#b09569, .5);
   }
 }
 

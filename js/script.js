@@ -24,15 +24,26 @@ $(function ($) {
         showArrow: false,
         addSuccessCssClassToField: 'success',
         addFailureCssClassToField: 'error',
-        parentFieldClass: '.formCell',
+        parentFormClass: '.orderForm',
         promptPosition: "centerRight",
         autoHidePrompt: true,
         autoHideDelay: 2000,
         autoPositionUpdate: true,
         addPromptClass: 'relative_mode',
         showOneMessage: false
+    }).find('[class*=validate]').on ('blur keyup', function () {
+        var form = $(this).closest('.validateMe'), notDone = false;
+
+        form.find('[class*=validate]').each(function () {
+            if (!$(this).hasClass('success')) {
+                notDone = true;
+            }
+        });
+
+        $('#actionBtn').attr('disabled', notDone ? 'disabled' : null);
+
     });
-    
+
 });
 
 function plural(n, str1, str2, str5) {

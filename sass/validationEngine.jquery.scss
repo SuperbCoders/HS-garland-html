@@ -380,11 +380,6 @@ body.rtl .formError .formErrorArrow {
   }
 }
 
-.error input {
-  box-shadow: 0 0 1em red !important;
-  border: 2px solid red !important;
-}
-
 @media only screen and (max-width: 720px) {
   .formError {
     top: auto !important;

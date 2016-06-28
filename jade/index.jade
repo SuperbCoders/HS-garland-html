@@ -159,7 +159,7 @@ html(lang='ru')
                     
                     .section_w.section_v2
                         .section_inner
-                            .order_form
+                            .order_form.orderForm.error
                                 h2.section_caption.buyMode выберите дату <br> и забронируйте гирлянды
                                 h2.section_caption.buyMode.modeInvert(style='display:none;') выберите размер <br> и закажите доставку
                                 
@@ -293,7 +293,7 @@ html(lang='ru')
                                             span.clr_gray стоимость аренды:
                                             span.clr_gold  1 000 руб
                                             
-                                        button.btn_v3.order_btn.white_btn_gold заказать
+                                        button#actionBtn.btn_v3.order_btn.white_btn_gold(disabled='disabled') заказать
 
             .footer_holder
                 .footer
