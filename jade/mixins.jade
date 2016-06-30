@@ -42,11 +42,11 @@ mixin works_slider(count, id)
                                 .work_sl_info
                                     a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
                                     title=' МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
-                            .work_slide
-                                img(src='i/photo_1.jpg')
-                                .work_sl_info
-                                    a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
-                                    title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
+                            //.work_slide
+                            //    img(src='i/photo_1.jpg')
+                            //    .work_sl_info
+                            //        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
+                            //        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
                 - else
                     .swiper-slide
                         .work_slide
@@ -55,8 +55,33 @@ mixin works_slider(count, id)
                                 a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id 
                                 title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее
 
-        .slider_pagination
+        .slider_pagination.mob_hidden
         .swiper-button-next.slider_next
         .swiper-button-prev.slider_prev
                 
                 
+mixin header()
+    div.header: .section_inner
+        .mob_menu_btn.mobMenuBtn
+            span
+        .logo_holder
+            span.logo
+        ul.main_menu
+            li.menu_item
+                a.menu_link(href='#')
+                    span.link_text
+                        span.mob_hidden расчитать стоимость
+                        span.dt_hidden заказать 
+            li.menu_item
+                a.menu_link(href='#')
+                    span.link_text условия аренды
+            
+            li.menu_item.menu_item_r
+                a.menu_link(href='#')
+                    span.link_text остались вопросы?
+            li.menu_item.menu_item_r
+                a.menu_link(href='#')
+                    span.link_text
+                        span.mob_hidden звоните: 8 495 135 75 31
+                        span.dt_hidden адрес  
+                        

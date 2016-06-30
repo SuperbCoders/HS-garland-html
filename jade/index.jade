@@ -3,44 +3,33 @@ doctype html
 html(lang='ru')
     +dev_head('Girland', true)
     body.h_100p
+        .slider_holder
+            .mainSlider.swiper-container.main_slider
+                .swiper_controls: .section_inner
+                    .swiper-button-next.mob_hidden#main_slider_next
+                    .swiper-button-prev.mob_hidden#main_slider_prev
+                    .swiper-button-pagination.dt_hidden#main_slider_pagination
+                .swiper-wrapper.clearfix
+                    +loop_while(4)
+                        .swiper-slide
+                            .slide_img.mob_hidden.imgBS: img(src='i/top_banner.jpg')
+                            .slide_img.dt_hidden.imgBS: img(src='i/top_banner_mob.jpg')
+
+                .slide_content
+                    .section_inner.text_center
+                        .slide_i_block
+                            h2.slide_i_caption.fz_30 А Р Е Н Д А
+                            p.fz_72 Ретро
+                            p.fz_42 гирлянды
+                            p.fz_37 с лампами
+                            p.fz_30 накаливания
+
+            a.btn_v3.order_now_btn.white_btn(href='#') заказать сейчас
+            
         .wrapper
-            .slider_holder
-                .mainSlider.swiper-container.main_slider
-                    .swiper_controls: .section_inner
-                        .swiper-button-next#main_slider_next
-                        .swiper-button-prev#main_slider_prev
-                    .swiper-wrapper.clearfix
-                        +loop_while(4)
-                            .swiper-slide
-                                .slide_img.imgBS: img(src='i/top_banner.jpg')
-
-                    .slide_content
-                        .section_inner.text_center
-                            .slide_i_block
-                                h2.slide_i_caption.fz_30 А Р Е Н Д А
-                                p.fz_72 Ретро
-                                p.fz_42 гирлянды
-                                p.fz_37 с лампами
-                                p.fz_30 накаливания
-
-                a.btn_v3.order_now_btn.white_btn(href='#') заказать сейчас
+            +header()
+                
             .base
-                div.header: .section_inner
-                    ul.main_menu
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text расчитать стоимость
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text условия аренды
-                        li.menu_item.logo_holder
-                            span.logo
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text остались вопросы?
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text звоните: 8 495 135 75 31
                     
                 div.main_content
                     .section_w.section_v1
@@ -81,55 +70,68 @@ html(lang='ru')
                                 img(src='i/1604_HS_Garland_Parallax_01.png')
 
                             .section_inner
-                                ul.garland_dims
-                                    li
-                                        .garland_dim_unit
-                                            .garland_dim_caption расстояние  <br> между лампочками
-                                            .garland_dim_img
-                                                img(src='i/lamp_dist.svg')
-                                                .garland_text 
-                                                    | 30 
-                                                    span.fz_24 см
-                                            p На наших гирляндах элементарно больше лампочек! 
+                                .swiper-container.dims_slider.dimsSlider
+                                    .swiper_controls.dt_hidden
+                                        .swiper-button-pagination.dt_hidden#dim_slider_pagination
                                             
-                                    li
-                                        .garland_dim_unit
-                                            .garland_dim_caption длина <br> гирлянд
-                                            .garland_dim_img
-                                                img(src='i/garland.svg')
-                                                .garland_text 
-                                                    | 3 
-                                                    span.fz_24 м  
-                                                    | • 5 
-                                                    span.fz_24 м 
-                                                    | • 10 
-                                                    span.fz_24 м 
-                                                    | • 15 
-                                                    span.fz_24 м
-
-                                            p Мы подобрали оптимальные длины гирлянд на все случаи.
+                                    ul.swiper-wrapper.clearfix
+                                        li.swiper-slide
+                                            .garland_dim_unit
+                                                .garland_dim_caption расстояние  <br> между лампочками
+                                                .garland_dim_img
+                                                    img(src='i/lamp_dist.svg')
+                                                    .garland_text 
+                                                        | 30 
+                                                        span.fz_24 см
+                                                p На наших гирляндах элементарно больше лампочек! 
+                                                
+                                        li.swiper-slide
+                                            .garland_dim_unit
+                                                .garland_dim_caption длина <br> гирлянд
+                                                .garland_dim_img
+                                                    img(src='i/garland.svg')
+                                                    .garland_text 
+                                                        | 3 
+                                                        span.fz_24 м  
+                                                        | • 5 
+                                                        span.fz_24 м 
+                                                        | • 10 
+                                                        span.fz_24 м 
+                                                        | • 15 
+                                                        span.fz_24 м
+    
+                                                p Мы подобрали оптимальные длины гирлянд на все случаи.
+                                                
+                                        li.swiper-slide
+                                            .garland_dim_unit
+                                                .garland_dim_caption мощность <br> ламп
+                                                .garland_dim_img
+                                                    img(src='i/lamp_power.svg')
+                                                    .garland_text 
+                                                        | 10 
+                                                        span.fz_24 Вт
+                                                        | &nbsp; &nbsp; &nbsp; 25 
+                                                        span.fz_24 Вт 
+                                                p Наши гирлянды подходят как для украшения, так и для освещения.
+                                                
+                                        li.swiper-slide.mob_hidden
+                                            .garland_dim_unit
+                                                .garland_dim_caption и ещё
+                                                .garland_dim_img
+                                                    a.garland_add_mode(href='benefits.html') 
+                                                p Еще несколько причин, почему наши гирлянды самые крутые
                                             
-                                    li
-                                        .garland_dim_unit
-                                            .garland_dim_caption мощность <br> ламп
-                                            .garland_dim_img
-                                                img(src='i/lamp_power.svg')
-                                                .garland_text 
-                                                    | 10 
-                                                    span.fz_24 Вт
-                                                    | &nbsp; &nbsp; &nbsp; 25 
-                                                    span.fz_24 Вт 
-                                            p Наши гирлянды подходят как для украшения, так и для освещения.
-                                            
-                                    li
-                                        .garland_dim_unit
-                                            .garland_dim_caption и ещё
-                                            .garland_dim_img
-                                                a.garland_add_mode(href='benefits.html') 
-                                            p Еще несколько причин, почему наши гирлянды самые крутые
                             .garland_works: .section_inner
                                 h2.section_caption наши гирлянДы <br> в работе
-                                .tab_controls
+                                .tab_select: .select_v3.dt_hidden
+                                    select.tabSelect.select2(data-select-class='tab_select_emul')
+                                        option(value='#filter_tab_1') все фото (121)
+                                        option(value='#filter_tab_2') праздники (33)
+                                        option(value='#filter_tab_3') ярмарки и интерьеры (24)
+                                        option(value='#filter_tab_4') реклама и кино (2)
+                                        option(value='#filter_tab_5') свадьбы (62)
+                                    
+                                .tab_controls.mob_hidden
                                     ul#works_filter.filter_list
                                         li.filter_item: a.filter_link(href='#filter_tab_1'): span все фото (121)
                                         li.filter_item: a.filter_link(href='#filter_tab_2'): span праздники (33)
@@ -141,13 +143,13 @@ html(lang='ru')
                                     #filter_tab_1
                                         +works_slider(15, 1)
                                     #filter_tab_2
-                                        +works_slider(4, 2)
+                                        +works_slider(8, 2)
                                     #filter_tab_3
                                         +works_slider(1, 3)
                                     #filter_tab_4
-                                        +works_slider(5, 4)
+                                        +works_slider(11, 4)
                                     #filter_tab_5
-                                        +works_slider(10, 5)
+                                        +works_slider(23, 5)
                                     
                                 .share_banner
                                     .share_discount
@@ -172,27 +174,32 @@ html(lang='ru')
                                             span.switcher_off арендовать
                                     .buyMode
                                         .date_p_controls
-                                            //-.date_p_years
-                                                select.select2.dateRangeYear(data-select-class='select_v1')
-                                            
-                                            .date_p_months
-                                                .date_month.dateMonth: span.month_day.monthBtn Январь
-                                                .date_month.dateMonth: span.month_day.monthBtn Февраль
-                                                .date_month.dateMonth: span.month_day.monthBtn Март
-                                                .date_month.dateMonth: span.month_day.monthBtn Апрель 
-                                                .date_month.dateMonth: span.month_day.monthBtn Май
-                                                .date_month.dateMonth: span.month_day.monthBtn Июнь
-                                                .date_month.dateMonth: span.month_day.monthBtn Июль
-                                                .date_month.dateMonth: span.month_day.monthBtn Август
-                                                .date_month.dateMonth: span.month_day.monthBtn Сентябрь
-                                                .date_month.dateMonth: span.month_day.monthBtn Октябрь
-                                                .date_month.dateMonth: span.month_day.monthBtn Ноябрь
-                                                .date_month.dateMonth: span.month_day.monthBtn Декабрь
+                                            .swiper-container.monthSlider
+                                                .swiper-wrapper: .swiper-slide
+
+                                                    //-.date_p_years
+                                                        select.select2.dateRangeYear(data-select-class='select_v1')
+                                                    
+                                                    .date_p_months
+                                                        .date_month.dateMonth: span.month_day.monthBtn Январь
+                                                        .date_month.dateMonth: span.month_day.monthBtn Февраль
+                                                        .date_month.dateMonth: span.month_day.monthBtn Март
+                                                        .date_month.dateMonth: span.month_day.monthBtn Апрель 
+                                                        .date_month.dateMonth: span.month_day.monthBtn Май
+                                                        .date_month.dateMonth: span.month_day.monthBtn Июнь
+                                                        .date_month.dateMonth: span.month_day.monthBtn Июль
+                                                        .date_month.dateMonth: span.month_day.monthBtn Август
+                                                        .date_month.dateMonth: span.month_day.monthBtn Сентябрь
+                                                        .date_month.dateMonth: span.month_day.monthBtn Октябрь
+                                                        .date_month.dateMonth: span.month_day.monthBtn Ноябрь
+                                                        .date_month.dateMonth: span.month_day.monthBtn Декабрь
                                             
                                         .date_p_holder.datePicker
                                             input#daterange.inp_hidden(type="text" name="daterange")
                                         .date_p_value
-                                            span выбранный Период аренды: 
+                                            span выбранный 
+                                            span.dt_hidden  <br> 
+                                            span Период&nbsp;аренды: 
                                             span.dateRange.date_p_range 13 ДНЕЙ
                                         
                                     .order_options_table
@@ -241,7 +248,7 @@ html(lang='ru')
                                         .order_settings_cell
                                             .setting_unit
                                                 span.clr_gray длина гирлянды:
-                                                span
+                                                span.select_v2
                                                     select.select2(data-select-class='select_v2')
                                                         option(data-nowaterproof='не влагозащищенные') 3 метра
                                                         option(data-nowaterproof='не влагозащищенные') 5 метров
@@ -253,38 +260,51 @@ html(lang='ru')
                                         .order_settings_cell
                                             .setting_unit
                                                 span.clr_gray количество гирлянд:   
-                                                span.settings_counter
+                                                span.dt_hidden
+                                                    span.select_v2
+                                                        select.select2(data-select-class='select_v2')
+                                                            option 1
+                                                            option 2
+                                                            option 3
+                                                            option 4
+                                                            option 5
+                                                            option 6
+                                                            
+                                                span.mob_hidden.settings_counter
                                                     span.settings_btn.btn_down
                                                     input.f_input.input_v1(value='1')
                                                     span.settings_btn.btn_up
                                                     
-
                                         .order_settings_cell
                                             .setting_unit
                                                 span.clr_gray мощность ламп:   
-                                                span
+                                                span.select_v2
                                                     select.select2(data-select-class='select_v2')
                                                         option 25 вт
                                                         option 50 вт
                                                         option 75 вт
                                                         option 100 вт
                                                         
-                                    .text_center
+                                    .text_center.order_add_btn_holder
                                         a.order_add_btn(href='#') добавить гирлянду другого размера
                                         
                                     .form_row
-                                        .form_cell
+                                        .form_cell: .formCell.input_w
+                                            span.form_cell_icon
                                             input.f_input.input_v2(placeholder='ваше имя' class='validate[required]')
-                                                        
-                                        .form_cell
+                                                                                                    
+                                        .form_cell: .formCell.input_w
+                                            span.form_cell_icon
                                             input.f_input.input_v2(placeholder='ваш e-mail' class='validate[required,custom[email]]')
-                                                        
-                                        .form_cell
+                                                                                                    
+                                        .form_cell: .formCell.input_w
+                                            span.form_cell_icon
                                             input.f_input.input_v2(placeholder='ваш телефон' class='validate[required]')
-                                                       
-                                        .form_cell.form_cell_wide
+                                                                                                   
+                                        .form_cell.form_cell_wide: .formCell.input_w
+                                            span.form_cell_icon
                                             input.f_input.input_v2(placeholder='адрес доставки' class='validate[required]')
-                                                       
+                                                                                                   
                                     .text_center
                                         .pledge_sum.buyMode
                                             span.clr_gray сумма залога за гирлянды: 
@@ -299,7 +319,7 @@ html(lang='ru')
                 .footer
                     .section_inner
                         .footer_table
-                            .footer_t_cell
+                            .footer_t_cell: .footer_share_block
                                 p.text_upper HAPPY STATION <br> в соцсетях:
                                 ul.footer_share
                                     li: a.sh_link.sh_fb(href='https://www.facebook.com/happystationru')
@@ -308,7 +328,7 @@ html(lang='ru')
                             .footer_t_cell
                                 p: a.footer_logo(href='#'): span.text_upper Перейти в магазин <br> Happy Station
                                 
-                            .footer_t_cell
+                            .footer_t_cell: .footer_help_block 
                                 p.text_upper нужна помощь?
                                 .callback_text Звоните: +1-855-773-6736 <br> или пишите 
                                     a.callback_link(href='mailto:arenda@happystation.ru') arenda@happystation.ru

@@ -2,13 +2,18 @@ var browserWindow, doc;
 
 $(function ($) {
 
-    var header = $('.header'), dateRange = $('.dateRange');
+    var $html = $('html'), header = $('.header'), dateRange = $('.dateRange'), mobMenu = $('.mobMenuBtn');
 
     doc = $(document);
     browserWindow = $(window);
 
     browserWindow.on('scroll', function () {
         header.toggleClass('fixed_header', doc.scrollTop() >= 90);
+    });
+
+    mobMenu.on ('click', function () {
+        $html.toggleClass('open_menu');
+        return false;
     });
 
     $(window).stellar({
@@ -25,22 +30,23 @@ $(function ($) {
         addSuccessCssClassToField: 'success',
         addFailureCssClassToField: 'error',
         parentFormClass: '.orderForm',
+        parentFieldClass: '.formCell',
         promptPosition: "centerRight",
         autoHidePrompt: true,
-        autoHideDelay: 2000,
+        autoHideDelay: 200000,
         autoPositionUpdate: true,
         addPromptClass: 'relative_mode',
         showOneMessage: false
-    }).find('[class*=validate]').on ('blur keyup', function () {
+    }).find('*[class*=validate]').on ('blur keyup', function () {
         var form = $(this).closest('.validateMe'), notDone = false;
 
-        form.find('[class*=validate]').each(function () {
+        form.find('*[class*=validate]').each(function () {
             if (!$(this).hasClass('success')) {
                 notDone = true;
             }
         });
 
-        $('#actionBtn').attr('disabled', notDone ? 'disabled' : null);
+        $('#actionBtn').attr('disabled', notDone || null);
 
     });
 

@@ -4,6 +4,8 @@ html(lang='ru')
     +dev_head('Girland условия')
     body.h_100p
         .wrapper
+            +header()
+
             .slider_holder
                 .hero_holder
                     .garland_lamp(
@@ -20,22 +22,6 @@ html(lang='ru')
 
                 a.btn_v3.order_now_btn.white_btn(href='HS_Rent_05.pdf') скачать договор (pdf)
             .base
-                div.header: .section_inner
-                    ul.main_menu
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text расчитать стоимость
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text условия аренды
-                        li.menu_item.logo_holder
-                            a.logo(href='index.html')
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text остались вопросы?
-                        li.menu_item
-                            a.menu_link(href='#')
-                                span.link_text звоните: 8 495 135 75 31
                     
                 div.main_content
                     ul.condition_list

@@ -23,54 +23,60 @@
     <script src="js/index.js"></script>
   </head>
   <body class="h_100p">
-    <div class="wrapper">
-      <div class="slider_holder">
-        <div class="mainSlider swiper-container main_slider">
-          <div class="swiper_controls">
-            <div class="section_inner">
-              <div id="main_slider_next" class="swiper-button-next"></div>
-              <div id="main_slider_prev" class="swiper-button-prev"></div>
-            </div>
-          </div>
-          <div class="swiper-wrapper clearfix">
-            <div class="swiper-slide">
-              <div class="slide_img imgBS"><img src="i/top_banner.jpg"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide_img imgBS"><img src="i/top_banner.jpg"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide_img imgBS"><img src="i/top_banner.jpg"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide_img imgBS"><img src="i/top_banner.jpg"></div>
-            </div>
-          </div>
-          <div class="slide_content">
-            <div class="section_inner text_center">
-              <div class="slide_i_block">
-                <h2 class="slide_i_caption fz_30">А Р Е Н Д А</h2>
-                <p class="fz_72">Ретро</p>
-                <p class="fz_42">гирлянды</p>
-                <p class="fz_37">с лампами</p>
-                <p class="fz_30">накаливания</p>
-              </div>
-            </div>
-          </div>
-        </div><a href="#" class="btn_v3 order_now_btn white_btn">заказать сейчас</a>
-      </div>
-      <div class="base">
-        <div class="header">
+    <div class="slider_holder">
+      <div class="mainSlider swiper-container main_slider">
+        <div class="swiper_controls">
           <div class="section_inner">
-            <ul class="main_menu">
-              <li class="menu_item"><a href="#" class="menu_link"><span class="link_text">расчитать стоимость</span></a></li>
-              <li class="menu_item"><a href="#" class="menu_link"><span class="link_text">условия аренды</span></a></li>
-              <li class="menu_item logo_holder"><span class="logo"></span></li>
-              <li class="menu_item"><a href="#" class="menu_link"><span class="link_text">остались вопросы?</span></a></li>
-              <li class="menu_item"><a href="#" class="menu_link"><span class="link_text">звоните: 8 495 135 75 31</span></a></li>
-            </ul>
+            <div id="main_slider_next" class="swiper-button-next mob_hidden"></div>
+            <div id="main_slider_prev" class="swiper-button-prev mob_hidden"></div>
+            <div id="main_slider_pagination" class="swiper-button-pagination dt_hidden"></div>
           </div>
         </div>
+        <div class="swiper-wrapper clearfix">
+          <div class="swiper-slide">
+            <div class="slide_img mob_hidden imgBS"><img src="i/top_banner.jpg"></div>
+            <div class="slide_img dt_hidden imgBS"><img src="i/top_banner_mob.jpg"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_img mob_hidden imgBS"><img src="i/top_banner.jpg"></div>
+            <div class="slide_img dt_hidden imgBS"><img src="i/top_banner_mob.jpg"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_img mob_hidden imgBS"><img src="i/top_banner.jpg"></div>
+            <div class="slide_img dt_hidden imgBS"><img src="i/top_banner_mob.jpg"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_img mob_hidden imgBS"><img src="i/top_banner.jpg"></div>
+            <div class="slide_img dt_hidden imgBS"><img src="i/top_banner_mob.jpg"></div>
+          </div>
+        </div>
+        <div class="slide_content">
+          <div class="section_inner text_center">
+            <div class="slide_i_block">
+              <h2 class="slide_i_caption fz_30">А Р Е Н Д А</h2>
+              <p class="fz_72">Ретро</p>
+              <p class="fz_42">гирлянды</p>
+              <p class="fz_37">с лампами</p>
+              <p class="fz_30">накаливания</p>
+            </div>
+          </div>
+        </div>
+      </div><a href="#" class="btn_v3 order_now_btn white_btn">заказать сейчас</a>
+    </div>
+    <div class="wrapper">
+      <div class="header">
+        <div class="section_inner">
+          <div class="mob_menu_btn mobMenuBtn"><span></span></div>
+          <div class="logo_holder"><span class="logo"></span></div>
+          <ul class="main_menu">
+            <li class="menu_item"><a href="#" class="menu_link"><span class="link_text"><span class="mob_hidden">расчитать стоимость</span><span class="dt_hidden">заказать </span></span></a></li>
+            <li class="menu_item"><a href="#" class="menu_link"><span class="link_text">условия аренды</span></a></li>
+            <li class="menu_item menu_item_r"><a href="#" class="menu_link"><span class="link_text">остались вопросы?</span></a></li>
+            <li class="menu_item menu_item_r"><a href="#" class="menu_link"><span class="link_text"><span class="mob_hidden">звоните: 8 495 135 75 31</span><span class="dt_hidden">адрес  </span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="base">
         <div class="main_content">
           <div class="section_w section_v1">
             <div class="section_inner">
@@ -88,56 +94,72 @@
               <div data-stellar-offset-parent="true" data-stellar-horizontal-offset="0" data-stellar-ratio="1.8" class="garland_2 garland_item"><img src="i/1604_HS_Garland_Parallax_02.png"></div>
               <div data-stellar-offset-parent="true" data-stellar-horizontal-offset="0" data-stellar-ratio="2.1" class="garland_1 garland_item"><img src="i/1604_HS_Garland_Parallax_01.png"></div>
               <div class="section_inner">
-                <ul class="garland_dims">
-                  <li>
-                    <div class="garland_dim_unit">
-                      <div class="garland_dim_caption">расстояние  <br> между лампочками</div>
-                      <div class="garland_dim_img"><img src="i/lamp_dist.svg">
-                        <div class="garland_text">
-                           
-                          30 <span class="fz_24">см</span>
+                <div class="swiper-container dims_slider dimsSlider">
+                  <div class="swiper_controls dt_hidden">
+                    <div id="dim_slider_pagination" class="swiper-button-pagination dt_hidden"></div>
+                  </div>
+                  <ul class="swiper-wrapper clearfix">
+                    <li class="swiper-slide">
+                      <div class="garland_dim_unit">
+                        <div class="garland_dim_caption">расстояние  <br> между лампочками</div>
+                        <div class="garland_dim_img"><img src="i/lamp_dist.svg">
+                          <div class="garland_text">
+                             
+                            30 <span class="fz_24">см</span>
+                          </div>
                         </div>
+                        <p>На наших гирляндах элементарно больше лампочек! </p>
                       </div>
-                      <p>На наших гирляндах элементарно больше лампочек! </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="garland_dim_unit">
-                      <div class="garland_dim_caption">длина <br> гирлянд</div>
-                      <div class="garland_dim_img"><img src="i/garland.svg">
-                        <div class="garland_text">
-                           
-                          3 <span class="fz_24">м  </span>• 5 <span class="fz_24">м </span>• 10 <span class="fz_24">м </span>• 15 <span class="fz_24">м</span>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="garland_dim_unit">
+                        <div class="garland_dim_caption">длина <br> гирлянд</div>
+                        <div class="garland_dim_img"><img src="i/garland.svg">
+                          <div class="garland_text">
+                             
+                            3 <span class="fz_24">м  </span>• 5 <span class="fz_24">м </span>• 10 <span class="fz_24">м </span>• 15 <span class="fz_24">м</span>
+                          </div>
                         </div>
+                        <p>Мы подобрали оптимальные длины гирлянд на все случаи.</p>
                       </div>
-                      <p>Мы подобрали оптимальные длины гирлянд на все случаи.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="garland_dim_unit">
-                      <div class="garland_dim_caption">мощность <br> ламп</div>
-                      <div class="garland_dim_img"><img src="i/lamp_power.svg">
-                        <div class="garland_text">
-                           
-                          10 <span class="fz_24">Вт</span>&nbsp; &nbsp; &nbsp; 25 <span class="fz_24">Вт </span>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="garland_dim_unit">
+                        <div class="garland_dim_caption">мощность <br> ламп</div>
+                        <div class="garland_dim_img"><img src="i/lamp_power.svg">
+                          <div class="garland_text">
+                             
+                            10 <span class="fz_24">Вт</span>&nbsp; &nbsp; &nbsp; 25 <span class="fz_24">Вт </span>
+                          </div>
                         </div>
+                        <p>Наши гирлянды подходят как для украшения, так и для освещения.</p>
                       </div>
-                      <p>Наши гирлянды подходят как для украшения, так и для освещения.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="garland_dim_unit">
-                      <div class="garland_dim_caption">и ещё</div>
-                      <div class="garland_dim_img"><a href="benefits.html" class="garland_add_mode"> </a></div>
-                      <p>Еще несколько причин, почему наши гирлянды самые крутые</p>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                    <li class="swiper-slide mob_hidden">
+                      <div class="garland_dim_unit">
+                        <div class="garland_dim_caption">и ещё</div>
+                        <div class="garland_dim_img"><a href="benefits.html" class="garland_add_mode"> </a></div>
+                        <p>Еще несколько причин, почему наши гирлянды самые крутые</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="garland_works">
                 <div class="section_inner">
                   <h2 class="section_caption">наши гирлянДы <br> в работе</h2>
-                  <div class="tab_controls">
+                  <div class="tab_select">
+                    <div class="select_v3 dt_hidden">
+                      <select data-select-class="tab_select_emul" class="tabSelect select2">
+                        <option value="#filter_tab_1">все фото (121)</option>
+                        <option value="#filter_tab_2">праздники (33)</option>
+                        <option value="#filter_tab_3">ярмарки и интерьеры (24)</option>
+                        <option value="#filter_tab_4">реклама и кино (2)</option>
+                        <option value="#filter_tab_5">свадьбы (62)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="tab_controls mob_hidden">
                     <ul id="works_filter" class="filter_list">
                       <li class="filter_item"><a href="#filter_tab_1" class="filter_link"><span>все фото (121)</span></a></li>
                       <li class="filter_item"><a href="#filter_tab_2" class="filter_link"><span>праздники (33)</span></a></li>
@@ -155,125 +177,155 @@
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-1" data-group-name="СВАДЬБА 1" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                           </div>
                         </div>
-                        <div class="slider_pagination"></div>
+                        <div class="slider_pagination mob_hidden"></div>
                         <div class="swiper-button-next slider_next"></div>
                         <div class="swiper-button-prev slider_prev"></div>
                       </div>
@@ -286,37 +338,85 @@
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-2" data-group-name="СВАДЬБА 2" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                           </div>
                         </div>
-                        <div class="slider_pagination"></div>
+                        <div class="slider_pagination mob_hidden"></div>
                         <div class="swiper-button-next slider_next"></div>
                         <div class="swiper-button-prev slider_prev"></div>
                       </div>
@@ -332,7 +432,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="slider_pagination"></div>
+                        <div class="slider_pagination mob_hidden"></div>
                         <div class="swiper-button-next slider_next"></div>
                         <div class="swiper-button-prev slider_prev"></div>
                       </div>
@@ -345,45 +445,115 @@
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-4" data-group-name="СВАДЬБА 4" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                           </div>
                         </div>
-                        <div class="slider_pagination"></div>
+                        <div class="slider_pagination mob_hidden"></div>
                         <div class="swiper-button-next slider_next"></div>
                         <div class="swiper-button-prev slider_prev"></div>
                       </div>
@@ -396,85 +566,235 @@
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
-                              <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
-                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                             <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
                                 <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
                               <div class="work_slide"><img src="i/photo_1.jpg"/>
-                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title="МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
                               </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="work_slide"><img src="i/photo_1.jpg"/>
+                                <div class="work_sl_info"><a href="i/photo_1_big.jpg" rel="imageset-5" data-group-name="СВАДЬБА 5" title=" МАЙ 2015 | Архангельское, свадьба Марии и Петра " class="btn_v2 work_sl_info fancyboxLink white_btn_white">крупнее</a></div>
+                              </div>
+                              <!--.work_slide-->
+                              <!--    img(src='i/photo_1.jpg')-->
+                              <!--    .work_sl_info-->
+                              <!--        a.btn_v2.work_sl_info.fancyboxLink.white_btn_white(href="i/photo_1_big.jpg" rel="imageset-" + id data-group-name='СВАДЬБА ' + id -->
+                              <!--        title='МАЙ 2015 | Архангельское, свадьба Марии и Петра ' ) крупнее-->
                             </div>
                           </div>
                         </div>
-                        <div class="slider_pagination"></div>
+                        <div class="slider_pagination mob_hidden"></div>
                         <div class="swiper-button-next slider_next"></div>
                         <div class="swiper-button-prev slider_prev"></div>
                       </div>
@@ -504,25 +824,31 @@
                   </div>
                   <div class="buyMode">
                     <div class="date_p_controls">
-                      <div class="date_p_months">
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Январь</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Февраль</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Март</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Апрель </span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Май</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Июнь</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Июль</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Август</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Сентябрь</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Октябрь</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Ноябрь</span></div>
-                        <div class="date_month dateMonth"><span class="month_day monthBtn">Декабрь</span></div>
+                      <div class="swiper-container monthSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="date_p_months">
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Январь</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Февраль</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Март</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Апрель </span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Май</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Июнь</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Июль</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Август</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Сентябрь</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Октябрь</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Ноябрь</span></div>
+                              <div class="date_month dateMonth"><span class="month_day monthBtn">Декабрь</span></div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="date_p_holder datePicker">
                       <input id="daterange" type="text" name="daterange" class="inp_hidden">
                     </div>
-                    <div class="date_p_value"><span>выбранный Период аренды: </span><span class="dateRange date_p_range">13 ДНЕЙ</span></div>
+                    <div class="date_p_value"><span>выбранный </span><span class="dt_hidden"> <br> </span><span>Период&nbsp;аренды: </span><span class="dateRange date_p_range">13 ДНЕЙ</span></div>
                   </div>
                   <div class="order_options_table">
                     <div class="order_opt_row">
@@ -568,7 +894,7 @@
                   </div>
                   <div class="order_settings_table">
                     <div class="order_settings_cell">
-                      <div class="setting_unit"><span class="clr_gray">длина гирлянды:</span><span>
+                      <div class="setting_unit"><span class="clr_gray">длина гирлянды:</span><span class="select_v2">
                           <select data-select-class="select_v2" class="select2">
                             <option data-nowaterproof="не влагозащищенные">3 метра</option>
                             <option data-nowaterproof="не влагозащищенные">5 метров</option>
@@ -579,11 +905,19 @@
                           </select></span></div>
                     </div>
                     <div class="order_settings_cell">
-                      <div class="setting_unit"><span class="clr_gray">количество гирлянд:   </span><span class="settings_counter"><span class="settings_btn btn_down"></span>
+                      <div class="setting_unit"><span class="clr_gray">количество гирлянд:   </span><span class="dt_hidden"><span class="select_v2">
+                            <select data-select-class="select_v2" class="select2">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select></span></span><span class="mob_hidden settings_counter"><span class="settings_btn btn_down"></span>
                           <input value="1" class="f_input input_v1"><span class="settings_btn btn_up"></span></span></div>
                     </div>
                     <div class="order_settings_cell">
-                      <div class="setting_unit"><span class="clr_gray">мощность ламп:   </span><span>
+                      <div class="setting_unit"><span class="clr_gray">мощность ламп:   </span><span class="select_v2">
                           <select data-select-class="select_v2" class="select2">
                             <option>25 вт</option>
                             <option>50 вт</option>
@@ -592,19 +926,27 @@
                           </select></span></div>
                     </div>
                   </div>
-                  <div class="text_center"><a href="#" class="order_add_btn">добавить гирлянду другого размера</a></div>
+                  <div class="text_center order_add_btn_holder"><a href="#" class="order_add_btn">добавить гирлянду другого размера</a></div>
                   <div class="form_row">
                     <div class="form_cell">
-                      <input placeholder="ваше имя" class="f_input input_v2 validate[required]">
+                      <div class="formCell input_w"><span class="form_cell_icon"></span>
+                        <input placeholder="ваше имя" class="f_input input_v2 validate[required]">
+                      </div>
                     </div>
                     <div class="form_cell">
-                      <input placeholder="ваш e-mail" class="f_input input_v2 validate[required,custom[email]]">
+                      <div class="formCell input_w"><span class="form_cell_icon"></span>
+                        <input placeholder="ваш e-mail" class="f_input input_v2 validate[required,custom[email]]">
+                      </div>
                     </div>
                     <div class="form_cell">
-                      <input placeholder="ваш телефон" class="f_input input_v2 validate[required]">
+                      <div class="formCell input_w"><span class="form_cell_icon"></span>
+                        <input placeholder="ваш телефон" class="f_input input_v2 validate[required]">
+                      </div>
                     </div>
                     <div class="form_cell form_cell_wide">
-                      <input placeholder="адрес доставки" class="f_input input_v2 validate[required]">
+                      <div class="formCell input_w"><span class="form_cell_icon"></span>
+                        <input placeholder="адрес доставки" class="f_input input_v2 validate[required]">
+                      </div>
                     </div>
                   </div>
                   <div class="text_center">
@@ -623,19 +965,23 @@
           <div class="section_inner">
             <div class="footer_table">
               <div class="footer_t_cell">
-                <p class="text_upper">HAPPY STATION <br> в соцсетях:</p>
-                <ul class="footer_share">
-                  <li><a href="https://www.facebook.com/happystationru" class="sh_link sh_fb"></a></li>
-                  <li><a href="https://www.instagram.com/happystation/" class="sh_link sh_in"></a></li>
-                  <li><a href="https://ru.pinterest.com/happystation/" class="sh_link sh_vk"></a></li>
-                </ul>
+                <div class="footer_share_block">
+                  <p class="text_upper">HAPPY STATION <br> в соцсетях:</p>
+                  <ul class="footer_share">
+                    <li><a href="https://www.facebook.com/happystationru" class="sh_link sh_fb"></a></li>
+                    <li><a href="https://www.instagram.com/happystation/" class="sh_link sh_in"></a></li>
+                    <li><a href="https://ru.pinterest.com/happystation/" class="sh_link sh_vk"></a></li>
+                  </ul>
+                </div>
               </div>
               <div class="footer_t_cell">
                 <p><a href="#" class="footer_logo"><span class="text_upper">Перейти в магазин <br> Happy Station</span></a></p>
               </div>
               <div class="footer_t_cell">
-                <p class="text_upper">нужна помощь?</p>
-                <div class="callback_text">Звоните: +1-855-773-6736 <br> или пишите <a href="mailto:arenda@happystation.ru" class="callback_link">arenda@happystation.ru</a></div>
+                <div class="footer_help_block"> 
+                  <p class="text_upper">нужна помощь?</p>
+                  <div class="callback_text">Звоните: +1-855-773-6736 <br> или пишите <a href="mailto:arenda@happystation.ru" class="callback_link">arenda@happystation.ru</a></div>
+                </div>
               </div>
             </div>
           </div>
