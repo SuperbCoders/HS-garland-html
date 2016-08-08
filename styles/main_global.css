@@ -8,7 +8,7 @@
   visibility: hidden;
 }
 
-.header, .garland_item, .switcher_on, .switcher_off {
+.header, .garland_item, .share_discount, .switcher_on, .switcher_off {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   transform: translateZ(0);
@@ -1522,6 +1522,11 @@ body.h_100p {
   display: block;
   width: 100%;
 }
+@media only screen and (max-width: 1199px) {
+  .main_menu .menu_item .menu_link {
+    font-size: 10px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .main_menu {
     position: fixed;
@@ -2569,11 +2574,21 @@ body.h_100p {
   position: relative;
   line-height: 40px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #818181;
   font-family: "BebasNeueLight", sans-serif;
 }
 .date_p_controls .swiper-slide {
   min-width: 100%;
+}
+.date_p_controls .swiper-container {
+  padding-bottom: 5px;
+}
+.date_p_controls .swiper-container:before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #818181;
 }
 
 .date_p_years {
@@ -2744,14 +2759,15 @@ body.h_100p {
     margin-top: 55px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .order_options_table {
-    margin-top: -50px;
-  }
-}
 
 .order_opt_row {
   display: table-row;
+}
+@media only screen and (max-width: 1024px) {
+  .order_opt_row {
+    display: block;
+    text-align: center;
+  }
 }
 
 .order_opt_item {
@@ -2768,6 +2784,7 @@ body.h_100p {
   display: inline-block;
   font: 24px/30px "BebasNeueLight", sans-serif;
   letter-spacing: 1.5px;
+  text-align: left;
 }
 .check_v1 .check_text {
   position: relative;
@@ -2828,6 +2845,7 @@ body.h_100p {
   display: inline-block;
   font: 24px/30px "BebasNeueLight", sans-serif;
   letter-spacing: 1.5px;
+  text-align: left;
 }
 .radio_v1 .check_text {
   position: relative;
@@ -2958,6 +2976,8 @@ body.h_100p {
   display: inline-block;
   line-height: 1;
   cursor: pointer;
+  position: relative;
+  width: 100%;
 }
 .month_day:hover {
   color: #a98c5a;
@@ -2968,6 +2988,17 @@ body.h_100p {
   color: #a98c5a;
   cursor: default;
   text-decoration: none;
+}
+.active .month_day:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: #a98c5a;
+  height: 2px;
+  margin-top: 14px;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3729,9 +3760,18 @@ body.h_100p {
   font: 28px "BebasNeueLight", sans-serif;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1200px) {
   .dt_hidden {
     display: none !important;
+  }
+}
+.dt_only {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .dt_only {
+    display: block;
   }
 }
 @media only screen and (max-width: 1024px) {
