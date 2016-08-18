@@ -314,6 +314,11 @@ textarea:focus::-moz-placeholder {
   font-style: normal;
 }
 @font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff"), url("../fonts/HelveticaNeue-Light.ttf") format("truetype"), url("../fonts/HelveticaNeue-Light.svg#BebasNeueLight") format("svg");
+  font-style: normal;
+}
+@font-face {
   font-family: 'ProximaNovaRegular';
   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
 }
@@ -2373,7 +2378,7 @@ body.h_100p {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin: 7px 0 35px;
+  margin: 7px 0 15px;
   width: 52px;
   height: 30px;
   font: 22px "BebasNeueLight", sans-serif;
@@ -3351,6 +3356,27 @@ body.h_100p {
   .article_v1 {
     font-size: 18px;
   }
+}
+
+.article_v2 {
+  color: #6d6f71;
+  font: 12px/1.5 "HelveticaNeue-Light", sans-serif;
+}
+.article_v2 p {
+  margin-bottom: 10px;
+}
+.article_v2 table {
+  font-style: italic;
+  margin: -8px auto 25px;
+  font-size: 10px;
+}
+.article_v2 table td {
+  text-align: left;
+  padding: 2px 3px 1px;
+  width: 50%;
+}
+.article_v2 table td:first-child {
+  text-align: right;
 }
 
 .text_center {

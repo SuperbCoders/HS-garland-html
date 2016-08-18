@@ -162,9 +162,9 @@ html(lang='ru')
                     .section_w.section_v2
                         .section_inner
                             .order_form.orderForm.error
-                                h2.section_caption.buyMode выберите дату <br> и забронируйте гирлянды
-                                h2.section_caption.buyMode.modeInvert(style='display:none;') выберите размер <br> и закажите доставку
-                                
+                                    h2.section_caption.buyMode выберите дату <br> и забронируйте гирлянды
+                                    h2.section_caption.buyMode.modeInvert(style='display:none;') выберите размер <br> и закажите доставку
+                                    
                                 form.validateMe(action='#')
                                     .text_center
                                         label.order_switcher
@@ -172,7 +172,47 @@ html(lang='ru')
                                             span.switcher_trigger
                                             span.switcher_on купить 
                                             span.switcher_off арендовать
+                                            
+                                    .buyMode.modeInvert(style='display:none;')
+                                        .article_v2
+
+                                            p.text_center СТОИМОСТЬ ГИРЛЯНД:
+
+                                            table
+                                                tr
+                                                    td 3 метра, 10 ламп
+                                                    td — &nbsp; 1 999 р
+                                                tr
+                                                    td 5 метров, 15 ламп
+                                                    td — &nbsp; 2 999 р
+                                                tr
+                                                    td 10 метров, 30 ламп
+                                                    td — &nbsp; 4 999 р
+                                                tr
+                                                    td 15 метров, 45 ламп
+                                                    td — &nbsp; 6 999 р
                                     .buyMode
+                                        .article_v2
+                                            p.text_center Мы советуем брать гирлянды на 3–5 дней, при этом стоимость аренды одинаковая.  <br>                               Если вы хотите взять на больший период, — просто установите нужную вам дату возврата. Цена аренды изменится пропорционально
+                                            p.text_center СТОИМОСТЬ АРЕНДЫ ГИРЛЯНД:
+
+                                            table
+                                                tr
+                                                    td 3 метра, 10 ламп
+                                                    td — &nbsp; 490 р
+                                                tr
+                                                    td 5 метров, 15 ламп
+                                                    td — &nbsp; 740 р
+                                                tr
+                                                    td 10 метров, 30 ламп
+                                                    td — &nbsp; 990 р
+                                                tr
+                                                    td 15 метров, 45 ламп
+                                                    td — &nbsp; 1390 р
+                                                tr
+                                                    td 50 метров (влагозащищенные), 100 ламп
+                                                    td — &nbsp; 7990 р
+                                        
                                         .date_p_controls
                                             .swiper-container.monthSlider
                                                 .swiper-wrapper: .swiper-slide
